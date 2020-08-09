@@ -1,5 +1,5 @@
 {
-  "name": "quiz-app",
+  "name": "trivia-frenzy",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,7 +13,8 @@
     "bootstrap-vue": "^2.16.0",
     "core-js": "^3.6.5",
     "lodash": "^4.17.19",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-github-corners": "^1.2.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
