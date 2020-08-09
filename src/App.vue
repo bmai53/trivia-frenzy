@@ -7,6 +7,7 @@
 			cornerColor='#007bff'
 			gitColor='FFF'
 			:size='100'
+			leftCorner
 		/>
 		<Score :correctAnswers="correctAnswers" :total="total" />
 		<b-container>
