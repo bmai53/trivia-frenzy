@@ -1,18 +1,18 @@
 
 <template>
 	<div id="app">
-		<GithubCorner 
-			class="fixed-top" 
-			url='https://github.com/bmai53/trivia-frenzy' 
-			cornerColor='#007bff'
-			gitColor='FFF'
-			:size='100'
+		<GithubCorner
+			class="fixed-top"
+			url="https://github.com/bmai53/trivia-frenzy"
+			cornerColor="#007bff"
+			gitColor="FFF"
+			:size="100"
 			leftCorner
 		/>
 		<Score :correctAnswers="correctAnswers" :total="total" />
 		<b-container>
 			<b-row>
-        <b-col sm="2"/>
+				<b-col sm="2" />
 				<b-col sm="8">
 					<b-spinner v-if="!questions.length" class="spinner" label="Large Spinner" />
 					<QuestionBox
@@ -22,18 +22,18 @@
 						:increment="increment"
 					/>
 				</b-col>
-        <b-col sm="2"/>
+				<b-col sm="2" />
 			</b-row>
 			<b-row>
-        <b-col sm="3"/>
+				<b-col sm="3" />
 				<b-col sm="6">
-        <b-col sm="3"/>
+					<b-col sm="3" />
 					<QuestionFilter
 						:getQuestions="getQuestions"
 						:categoryID="categoryID"
 						:difficulty="difficulty"
-            :updateCategoryID="updateCategoryID"
-            :updateDifficulty="updateDifficulty"
+						:updateCategoryID="updateCategoryID"
+						:updateDifficulty="updateDifficulty"
 					/>
 				</b-col>
 			</b-row>
@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import GithubCorner from 'vue-github-corners'
+import GithubCorner from "vue-github-corners";
 import QuestionBox from "./components/QuestionBox.vue";
 import Score from "./components/Score.vue";
 import QuestionFilter from "./components/QuestionFilter";
@@ -63,8 +63,8 @@ export default {
 			index: 0,
 			correctAnswers: 0,
 			total: 0,
-			categoryID: 'any',
-			difficulty: 'any',
+			categoryID: "any",
+			difficulty: "any",
 		};
 	},
 	methods: {
@@ -90,17 +90,16 @@ export default {
 		getQuestions() {
 			const api = this.getApiUrl();
 			axios.get(api).then((res) => {
-        this.index = 0;
+				this.index = 0;
 				this.questions = res.data.results;
 			});
-    },
-    updateCategoryID(e){
-      this.categoryID = e.target.value
-    },
-    updateDifficulty(e){
-      this.difficulty = e.target.value
-    },
-
+		},
+		updateCategoryID(e) {
+			this.categoryID = e.target.value;
+		},
+		updateDifficulty(e) {
+			this.difficulty = e.target.value;
+		},
 	},
 	watch: {
 		index() {
