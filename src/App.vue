@@ -9,6 +9,13 @@
 			:size="100"
 			leftCorner
 		/>
+		<QuestionFilter
+			:getQuestions="getQuestions"
+			:categoryID="categoryID"
+			:difficulty="difficulty"
+			:updateCategoryID="updateCategoryID"
+			:updateDifficulty="updateDifficulty"
+		/>
 		<Score :correctAnswers="correctAnswers" :total="total" />
 		<b-container>
 			<b-row>
@@ -23,19 +30,6 @@
 					/>
 				</b-col>
 				<b-col sm="2" />
-			</b-row>
-			<b-row>
-				<b-col sm="3" />
-				<b-col sm="6">
-					<b-col sm="3" />
-					<QuestionFilter
-						:getQuestions="getQuestions"
-						:categoryID="categoryID"
-						:difficulty="difficulty"
-						:updateCategoryID="updateCategoryID"
-						:updateDifficulty="updateDifficulty"
-					/>
-				</b-col>
 			</b-row>
 		</b-container>
 	</div>
