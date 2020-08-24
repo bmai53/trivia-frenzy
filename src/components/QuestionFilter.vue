@@ -24,9 +24,12 @@
 						<option value="14">Entertainment: Television</option>
 						<option value="15">Entertainment: Video Games</option>
 						<option value="16">Entertainment: Board Games</option>
+						<option value="31">Entertainment: Japanese Anime &amp; Manga</option>
+						<option value="32">Entertainment: Cartoon &amp; Animations</option>
 						<option value="17">Science &amp; Nature</option>
 						<option value="18">Science: Computers</option>
 						<option value="19">Science: Mathematics</option>
+						<option value="30">Science: Gadgets</option>
 						<option value="20">Mythology</option>
 						<option value="21">Sports</option>
 						<option value="22">Geography</option>
@@ -37,9 +40,6 @@
 						<option value="27">Animals</option>
 						<option value="28">Vehicles</option>
 						<option value="29">Entertainment: Comics</option>
-						<option value="30">Science: Gadgets</option>
-						<option value="31">Entertainment: Japanese Anime &amp; Manga</option>
-						<option value="32">Entertainment: Cartoon &amp; Animations</option>
 					</select>
 
 					<label for="trivia_difficulty">Select Difficulty:</label>
